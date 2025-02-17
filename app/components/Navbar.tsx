@@ -61,24 +61,24 @@ export function Navbar() {
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-64 p-4">
+                <SheetContent side="right" className="w-64 p-4">
                   
                   <nav className="flex flex-col space-y-4 mt-4">
                     <a
                       href="#features"
-                      className="text-gray-700 hover:text-black transition-colors"
+                      className="text-white hover:text-gray-400 transition-colors"
                     >
                       Features
                     </a>
                     <a
                       href="#workflow"
-                      className="text-gray-700 hover:text-black transition-colors"
+                      className="text-white hover:text-gray-400 transition-colors"
                     >
                       Workflow
                     </a>
                     <a
                       href="#pricing"
-                      className="text-gray-700 hover:text-black transition-colors"
+                      className="text-white hover:text-gray-400 transition-colors"
                     >
                       Pricing
                     </a>
