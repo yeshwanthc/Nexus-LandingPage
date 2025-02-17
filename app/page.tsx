@@ -9,6 +9,7 @@ import { Testimonials } from './components/Testimonials';
 import { Integrations } from './components/Integrations';
 import { Pricing } from './components/Pricing';
 import { Footer } from './components/Footer';
+// import { Tabs } from './components/Tabs';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <WorkflowSection />
       <Showcase />
+      {/* <Tabs /> */}
       <Testimonials />
       <Integrations />
       <Pricing />

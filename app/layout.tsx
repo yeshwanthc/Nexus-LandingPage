@@ -1,14 +1,14 @@
+'use client'; 
+
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Lenis } from '@studio-freight/react-lenis';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Nexus - Build faster with modern tools',
-  description: 'Experience the future of development with Nexus.',
-};
+
 
 export default function RootLayout({
   children,
@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <title>Nexus - Build faster with modern tools</title>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -24,7 +27,9 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          {children}
+          <Lenis root> 
+            {children}
+          </Lenis>
         </ThemeProvider>
       </body>
     </html>
